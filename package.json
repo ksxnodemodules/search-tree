@@ -10,5 +10,11 @@
     "clean": "bash 'sh/clean.sh'",
     "fix": "bash 'sh/fix.sh'",
     "test": "bash 'sh/test.sh'"
-  }
+  },
+  "name": "string-storage-database",
+  "description": "A Map of string using Search Tree data structure",
+  "directories": {
+    "test": "test"
+  },
+  "license": "MIT"
 }
