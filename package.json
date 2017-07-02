@@ -12,7 +12,6 @@
     "fix": "bash 'sh/fix.sh'",
     "test": "bash 'sh/test.sh'"
   },
-  "name": "string-storage-database",
   "description": "SearchTree data structure with strings as keys",
   "directories": {
     "test": "test"
