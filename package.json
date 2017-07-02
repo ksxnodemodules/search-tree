@@ -1,4 +1,5 @@
 {
+  "name": "string-search-tree",
   "version": "0.0.0",
   "main": "index.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
