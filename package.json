@@ -12,7 +12,7 @@
     "test": "bash 'sh/test.sh'"
   },
   "name": "string-storage-database",
-  "description": "A Map of string using Search Tree data structure",
+  "description": "SearchTree data structure with strings as keys",
   "directories": {
     "test": "test"
   },
