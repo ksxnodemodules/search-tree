@@ -7,14 +7,14 @@ require('fs')
   .readdirSync(packages)
   .map(item => [resolve(packages, item), item])
   .forEach(([pkgname, item]) => {
+    const desc = {enumerable: true}
+
     try {
-      const desc = {value: require(pkgname), enumerable: true}
-      defineProperty(exports, pkgname, desc)
-      defineProperty(exports, item, desc)
+      desc.value = require(pkgname)
     } catch (error) {
       console.error(error)
-      const desc = {get: () => require(pkgname), enumerable: true}
-      defineProperty(exports, pkgname, desc)
-      defineProperty(exports, item, desc)
+      desc.get = () => require(pkgname)
     }
+
+    defineProperty(exports, desc)
   })
