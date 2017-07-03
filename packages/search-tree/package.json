@@ -1,10 +1,10 @@
 {
   "main": "lib/search-tree.js",
   "name": "search-tree",
-  "version": "0.0.1-1",
+  "version": "0.0.1-2",
   "description": "SearchTree data structure which stores array-like in an efficient way",
   "dependencies": {
-    "search-tree-utils": "^0.0.1-1"
+    "search-tree-utils": "^0.0.1-2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,7 +20,6 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ksxnodemodules/search-tree.git"
