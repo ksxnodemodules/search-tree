@@ -31,4 +31,4 @@ function capitalize ([first, ...rest]) {
   return firststr + reststr
 }
 
-Object.assign(exports, {createCamelCaseName, capitalize})
+Object.assign(exports, {createPascalCaseName, capitalize})
