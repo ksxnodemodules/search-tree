@@ -3,6 +3,9 @@
   "name": "search-tree-utils",
   "version": "0.0.1-2",
   "description": "Utility functions for search-tree",
+  "dependencies": {
+    "just-try": "^2.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
