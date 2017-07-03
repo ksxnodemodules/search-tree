@@ -4,6 +4,24 @@ const {stringify} = require('search-tree-utils')
 const {assign, getPrototypeOf} = Object
 const {iterator, toStringTag} = Symbol
 
+function SearchTreeMapperBase (map, fn) {
+  const mkmapfn = transform => () => new map.constructor(
+    Array.from(map).map(([key, value]) => transform(fn(value, key, map), {key, value}))
+  )
+
+  assign(this, {
+    pair: mkmapfn(pair => [...pair]),
+    key: mkmapfn((key, {value}) => [key, value]),
+    value: mkmapfn((value, {key}) => [key, value])
+  })
+}
+
+class SearchTreeMapper extends SearchTreeMapperBase {
+  static create (...args) {
+    return new this(...args)
+  }
+}
+
 class SearchTree extends Map {
   constructor (elements = []) {
     super()
@@ -116,6 +134,18 @@ class SearchTree extends Map {
     return this.entries()
   }
 
+  forEach (fn) {
+    for (const [key, value] of this) {
+      fn(value, key, this)
+    }
+    return this
+  }
+
+  map (fn) {
+    const {Mapper = SearchTreeMapper} = this.constructor
+    return new Mapper(this, fn)
+  }
+
   toString ({
     prefix = `${this[toStringTag]}\n`,
 
@@ -203,5 +233,7 @@ class SearchTree extends Map {
     return this.create()
   }
 }
+
+SearchTree.Mapper = SearchTreeMapper
 
 module.exports = SearchTree
