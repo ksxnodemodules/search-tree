@@ -2,7 +2,7 @@
 const SearchTree = require('search-tree')
 
 class StringSearchTree extends SearchTree {
-  constructor (elements) {
+  constructor (elements = []) {
     super(elements.map(([key, value]) => [String(key), value]))
   }
 
