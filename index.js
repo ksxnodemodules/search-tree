@@ -7,7 +7,7 @@ require('fs')
   .readdirSync(packages)
   .map(item => [resolve(packages, item), item])
   .forEach(([pkgname, item]) => {
-    const desc = {enumerable: true}
+    const desc = {enumerable: true, writable: false, configurable: false}
 
     try {
       desc.value = require(pkgname)
