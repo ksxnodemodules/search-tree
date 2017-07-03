@@ -1,5 +1,5 @@
 {
-  "main": "index.js",
+  "main": "lib/index.js",
   "name": "search-tree-utils",
   "version": "0.0.1-0",
   "description": "Utility functions for search-tree",

@@ -1,5 +1,5 @@
 {
-  "main": "index.js",
+  "main": "lib/string-search-tree.js",
   "name": "string-search-tree",
   "version": "0.0.1-0",
   "description": "SearchTree implementation that uses strings as keys",

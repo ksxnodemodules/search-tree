@@ -1,5 +1,5 @@
 {
-  "main": "search-tree.js",
+  "main": "lib/search-tree.js",
   "name": "search-tree",
   "version": "0.0.1-0",
   "description": "SearchTree data structure which stores array-like in an efficient way",
