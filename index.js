@@ -32,3 +32,5 @@ function capitalize ([first, ...rest]) {
   const reststr = rest.map(x => String(x).toLowerCase()).join('')
   return firststr + reststr
 }
+
+Object.assign(exports, {createCamelCaseName, capitalize})
