@@ -18,5 +18,17 @@
     "map"
   ],
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksxnodemodules/search-tree.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ksxnodemodules/search-tree/issues"
+  },
+  "homepage": "https://github.com/ksxnodemodules/search-tree#readme"
 }
