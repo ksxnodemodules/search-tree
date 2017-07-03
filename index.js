@@ -16,15 +16,13 @@ require('fs')
       desc.get = () => require(pkgname)
     }
 
-    ; [pkgname, createCamelCaseName(item)].forEach(
+    ; [pkgname, createPascalCaseName(item)].forEach(
       name => defineProperty(exports, name, desc)
     )
   })
 
-function createCamelCaseName (dashes) {
-  const [first, ...rest] = String(dashes).split(/[-_ ]/)
-  const reststr = rest.map(capitalize).join('')
-  return first + reststr
+function createPascalCaseName (dashes) {
+  return String(dashes).split(/[-_ ]/).map(capitalize).join('')
 }
 
 function capitalize ([first, ...rest]) {
