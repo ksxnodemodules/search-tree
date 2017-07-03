@@ -25,7 +25,7 @@ class SearchTreeMapper extends SearchTreeMapperBase {
 class SearchTree extends Map {
   constructor (elements = []) {
     super()
-    elements.forEach(x => this.set(...x))
+    Array.from(elements).forEach(x => this.set(...x))
   }
 
   has ([first, ...rest]) {
