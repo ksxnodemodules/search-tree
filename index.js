@@ -16,5 +16,7 @@ require('fs')
       desc.get = () => require(pkgname)
     }
 
-    defineProperty(exports, desc)
+    ; [pkgname, item].forEach(
+      name => defineProperty(exports, name, desc)
+    )
   })
