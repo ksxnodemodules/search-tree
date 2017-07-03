@@ -29,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/ksxnodemodules/search-tree/issues"
   },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
   "homepage": "https://github.com/ksxnodemodules/search-tree#readme"
 }
