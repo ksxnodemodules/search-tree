@@ -1,10 +1,10 @@
 {
   "main": "lib/string-search-tree.js",
   "name": "string-search-tree",
-  "version": "0.0.1-4",
+  "version": "0.0.1-5",
   "description": "SearchTree implementation that uses strings as keys",
   "dependencies": {
-    "search-tree": "^0.0.1-4"
+    "search-tree": "^0.0.1-5"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
