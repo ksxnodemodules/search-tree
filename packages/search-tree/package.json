@@ -1,10 +1,10 @@
 {
   "main": "search-tree.js",
   "name": "search-tree",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "SearchTree data structure which stores array-like in an efficient way",
   "dependencies": {
-    "search-tree-utils": "^0.0.0"
+    "search-tree-utils": "^0.0.1-0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
