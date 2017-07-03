@@ -5,12 +5,16 @@ const {defineProperty} = Object
 
 require('fs')
   .readdirSync(packages)
-  .map(item => resolve(packages, item))
-  .forEach(pkgname => {
+  .map(item => [resolve(packages, item), item])
+  .forEach(([pkgname, item]) => {
     try {
-      defineProperty(exports, pkgname, {value: require(pkgname), enumerable: true})
+      const desc = {value: require(pkgname), enumerable: true}
+      defineProperty(exports, pkgname, desc)
+      defineProperty(exports, item, desc)
     } catch (error) {
       console.error(error)
-      defineProperty(exports, pkgname, {get: () => require(pkgname), enumerable: true})
+      const desc = {get: () => require(pkgname), enumerable: true}
+      defineProperty(exports, pkgname, desc)
+      defineProperty(exports, item, desc)
     }
   })
