@@ -1,0 +1,11 @@
+{
+  "main": "index.js",
+  "name": "search-tree-utils",
+  "version": "0.0.0",
+  "description": "Utility functions for search-tree",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "license": "MIT"
+}

@@ -1,6 +1,6 @@
 'use strict'
 const {custom = Symbol('unavailable: custom')} = require('util').inspect
-const stringify = require('./stringify.js')
+const {stringify} = require('search-tree-utils')
 const {assign, getPrototypeOf} = Object
 const {iterator, toStringTag} = Symbol
 

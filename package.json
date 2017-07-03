@@ -1,9 +1,9 @@
 {
-  "name": "string-search-tree",
+  "name": "search-tree",
   "version": "0.0.0",
-  "main": "index.js",
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "devDependencies": {
+    "lerna": "^2.0.0-rc.5",
     "standard": "10.0.2"
   },
   "scripts": {
@@ -12,7 +12,7 @@
     "fix": "bash 'sh/fix.sh'",
     "test": "bash 'sh/test.sh'"
   },
-  "description": "SearchTree data structure with strings as keys",
+  "description": "SearchTree data structure",
   "directories": {
     "test": "test"
   },

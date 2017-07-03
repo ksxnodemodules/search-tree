@@ -1,5 +1,5 @@
 'use strict'
-const SearchTree = require('./lib/search-tree.js')
+const SearchTree = require('search-tree')
 
 class StringSearchTree extends SearchTree {
   constructor (elements) {

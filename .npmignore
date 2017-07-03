@@ -17,4 +17,5 @@ temp.*
 /appveyor.yml
 /circle.yml
 /sh
+lerna.*
 docs

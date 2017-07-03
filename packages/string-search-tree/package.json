@@ -1,0 +1,22 @@
+{
+  "main": "index.js",
+  "name": "string-search-tree",
+  "version": "0.0.0",
+  "description": "SearchTree implementation that uses strings as keys",
+  "dependencies": {
+    "search-tree": "^0.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "string-map",
+    "string",
+    "SearchTree",
+    "data-structure",
+    "search-tree",
+    "map"
+  ],
+  "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
+  "license": "MIT"
+}
